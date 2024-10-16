@@ -14,7 +14,8 @@ class Shop:
         return product_cost
 
     def print_bill(self, customer_name: str, product_cart: dict) -> None:
-        print(f"Date: {datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")}")
+        date_ = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        print(f"Date: {date_}")
         print(f"Thanks, {customer_name}, for your purchase!")
         print("You have bought:")  # noqa E231
         for name, number in product_cart.items():
